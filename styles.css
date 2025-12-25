@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1a1a2e;
+    color: #fff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #2d2d42;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4361ee;
+    letter-spacing: 1px;
+}
+
+.help-btn {
+    background: #4361ee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+

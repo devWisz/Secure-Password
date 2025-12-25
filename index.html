@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass - Password Manager & Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Secure Password</div>
+            <button class="help-btn" onclick="toggleHelp()">Password Guidelines</button>
+        </nav>
+
+        <div class="main-content">
+            <div class="password-generator">
+                <h2>Password Generator</h2>
+                <div class="password-display">
+                    <div id="password">Generate a password</div>
+                    <button class="copy-btn" onclick="copyPassword()">Copy</button>
+                </div>
+
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="uppercase" checked>
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="numbers" checked>
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                    <div class="option">
+                        <label for="length">Password Length: <span id="lengthValue">12</span></label>
+                        <input type="range" id="length" min="8" max="32" value="12">
+                    </div>
+                </div>
+
+                <div class="strength-meter">
+                    <div class="strength-meter-fill"></div>
+                </div>
+
+                <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+            </div>
+
+            <div class="password-storage">
+                <h2>Store Password</h2>
+                <div class="storage-form">
+                    <input type="text" id="website" placeholder="Website or App Name">
+                    <input type="text" id="username" placeholder="Username or Email">
+                    <input type="password" id="stored-password" placeholder="Password">
+                    <button class="store-btn" onclick="storePassword()">Store Password</button>
+                </div>
+            </div>
+
+            <div class="stored-passwords">
+                <h2>Stored Passwords</h2>
+                <div id="passwords-list"></div>
+            </div>
+
+            <div class="password-history">
+                <h2>Recently Generated</h2>
+                <div id="history-list"></div>
+            </div>
+        </div>
+    </div>
+
+    
