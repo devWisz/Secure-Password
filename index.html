@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Password/title>
+    <title>SecurePass - Password Manager & Generator</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <nav>
-            <div class="logo">Secure Password</div>
+            <div class="logo">SecurePass</div>
             <button class="help-btn" onclick="toggleHelp()">Password Guidelines</button>
         </nav>
 
@@ -63,15 +63,39 @@
             </div>
 
             <div class="stored-passwords">
-                <h2>Stored Passwords History</h2>
+                <h2>Stored Passwords</h2>
                 <div id="passwords-list"></div>
             </div>
 
             <div class="password-history">
-                <h2>Recently Generated Passwords</h2>
+                <h2>Recently Generated</h2>
                 <div id="history-list"></div>
             </div>
         </div>
     </div>
 
-    
+    <div class="help-modal" id="helpModal">
+        <div class="modal-content">
+            <h2>Password Security Guidelines</h2>
+            <ul>
+                <li>Use a minimum of 12 characters</li>
+                <li>Include a mix of uppercase and lowercase letters</li>
+                <li>Add numbers and special characters</li>
+                <li>Avoid using personal information</li>
+                <li>Use unique passwords for each account</li>
+                <li>Change passwords regularly</li>
+                <li>Enable two-factor authentication when possible</li>
+                <li>Never share your passwords</li>
+                <li>Consider using a password manager</li>
+            </ul>
+            <button class="close-btn" onclick="toggleHelp()">Close</button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">Password copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
