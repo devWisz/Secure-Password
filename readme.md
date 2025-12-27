@@ -40,6 +40,8 @@ Reuse or delete passwords anytime
 No login. No setup. Just open and use.
 
 
+Live Demo link : https://devwisz.github.io/Secure-Password/
+
 License
 
 This project is free to use, modify, and share.
