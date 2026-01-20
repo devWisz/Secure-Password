@@ -78,7 +78,7 @@ h2 {
 }
 
 #password {
-    font-family: 'Courier New', monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     word-break: break-all;
 }
@@ -236,4 +236,4 @@ input[type="range"] {
         width: 95%;
         margin: 20px;
     }
-}
+}  

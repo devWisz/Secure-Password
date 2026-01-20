@@ -151,4 +151,4 @@ function deletePassword(id) {
 }
 
 
-updateStoredPasswordsDisplay();
+updateStoredPasswordsDisplay(); 

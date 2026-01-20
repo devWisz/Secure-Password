@@ -20,16 +20,6 @@ Password security guidelines built in
 
 
 
-How It Works
-
-Passwords are generated based on user-selected rules
-Stored credentials are saved locally in the browser
-No data is sent to any server
-Everything runs completely offline after loading
-Your data stays on your device.
-
-
-
 Usage : 
 
 Open the application
